@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauricio García — Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="fondo"></canvas>
+
+  <!-- Overlay principal -->
+  <div class="overlay">
+    <h1 class="titulo">Mauricio García — Portafolio</h1>
+
+    <nav class="menu">
+      <a href="#sobre" class="item" data-section="sobre">Sobre mí</a>
+      <a href="#proyectos" class="item" data-section="proyectos">Proyectos</a>
+      <a href="#contacto" class="item" data-section="contacto">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Secciones de contenido (SPA) -->
+  <main id="contenido">
+    <section id="sobre" class="seccion">
+      <div class="contenido">
+        <h2>🌊 Sobre Mí</h2>
+        <p>Estudiante de Ingeniería Multimedia con enfoque en videojuegos, también me desempeño como entrenador de natación.</p>
+        
+        <!-- Información adicional de tu hoja de vida -->
+        <div class="info-personal">
+          <div class="info-item">
+            <h3>🎓 Educación</h3>
+            <p>Universidad San Buenaventura Cali - Ingeniería Multimedia (2023-actual)</p>
+          </div>
+          
+          <div class="info-item">
+            <h3>💼 Experiencia</h3>
+            <p>Club Natación Vijes - Entrenador de Natación (2024-actual)</p>
+          </div>
+          
+          <div class="info-item">
+            <h3>🛠️ Habilidades</h3>
+            <p>Creación de contenido • Programación • Diseño Gráfico • Natación • Inglés</p>
+          </div>
+        </div>
+
+        <div class="habilidades">
+          <span class="habilidad">Three.js</span>
+          <span class="habilidad">JavaScript</span>
+          <span class="habilidad">React</span>
+          <span class="habilidad">WebGL</span>
+          <span class="habilidad">HTML5</span>
+        </div>
+
+        <!-- Botón para descargar hoja de vida -->
+        <div class="descarga-cv">
+          <a href="Hoja de vida Mauricio García.pdf" download="Hoja_de_Vida_Mauricio_Garcia.pdf" class="btn-cv">
+            📄 Descargar Hoja de Vida
+          </a>
+        </div>
+
+        <button class="volver">Volver al inicio</button>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <div class="contenido">
+        <h2>🚀 Proyectos</h2>
+        <div class="proyectos-grid">
+          <div class="proyecto" onclick="abrirRepositorio('https://github.com/MAOMANT?tab=repositories')">
+            <h3>📊 Visualizador de Datos</h3>
+            <p>Dashboard con gráficos 3D y animaciones fluidas</p>
+            <small>Haz clic para ver el repositorio</small>
+          </div>
+          <div class="proyecto" onclick="abrirRepositorio('https://github.com/MAOMANT/Parcial-3-Mauricio-Garcia.git')">
+            <h3>🌊 Portafolio Inmersivo</h3>
+            <p>Este mismo proyecto con efectos submarinos</p>
+            <small>Haz clic para ver el repositorio</small>
+          </div>
+        </div>
+        <button class="volver">Volver al inicio</button>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <div class="contenido">
+        <h2>📞 Contacto</h2>
+        <p>¿Quieres contactarme?, Hablemos:</p>
+        <div class="contacto-info">
+          <p>📧 garcianaranjomauricio@gmail.com</p>
+          <p>📱 +57 3226671265</p>
+          <p>📍 Cali, Colombia</p>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://github.com/MAOMANT" class="red-social" target="_blank">GitHub</a>
+        </div>
+        <button class="volver">Volver al inicio</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+  <script>
+    function abrirRepositorio(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
